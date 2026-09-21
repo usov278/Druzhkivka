@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Форма обратной связи информационного сайта о городе Дружковка.">
+
+    <meta name="keywords"
+          content="Дружковка, обратная связь, предложение, жалоба, вопрос">
+
+    <title>Обратная связь | Дружковка</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body id="top">
+
+<header class="site-header">
+
+    <div class="container">
+
+        <div class="header-content">
+
+            <div class="logo">
+
+                <span class="logo-icon">🏙️</span>
+
+                <div>
+                    <h1>Дружковка</h1>
+                    <p>Город с историей</p>
+                </div>
+
+            </div>
+
+
+            <nav class="main-nav" aria-label="Основная навигация">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="developer.html">
+                            О разработчике
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="history.html">
+                            История
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="infrastructure.html">
+                            Инфраструктура
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="culture.html">
+                            Культура и искусство
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="feedback.html" class="active">
+                            Обратная связь
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+    <!-- Вступление -->
+
+    <section class="page-intro">
+
+        <div class="container">
+
+            <span class="hero-label">
+                Ваше мнение
+            </span>
+
+            <h2>
+                Обратная связь
+            </h2>
+
+            <p>
+                Если вы хотите поделиться информацией о Дружковке,
+                предложить дополнение для сайта, сообщить об ошибке
+                или оставить отзыв, воспользуйтесь формой ниже.
+            </p>
+
+            <p>
+                Перед отправкой сообщения убедитесь, что указали
+                корректный адрес электронной почты и подробно описали
+                свой вопрос или предложение.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Форма -->
+
+    <section class="feedback-section">
+
+        <div class="container">
+
+            <div class="feedback-layout">
+
+
+                <!-- Информация -->
+
+                <aside class="feedback-info">
+
+                    <h2>
+                        Как оставить сообщение?
+                    </h2>
+
+                    <p>
+                        Выберите подходящий тип обращения и подробно
+                        опишите свой вопрос или предложение.
+                    </p>
+
+
+                    <div class="feedback-rule">
+
+                        <span>01</span>
+
+                        <div>
+                            <h3>Укажите имя</h3>
+
+                            <p>
+                                Имя необходимо указать для того, чтобы
+                                обращение было персональным.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feedback-rule">
+
+                        <span>02</span>
+
+                        <div>
+                            <h3>Укажите email</h3>
+
+                            <p>
+                                Используйте полный корректный адрес
+                                электронной почты, например:
+                                example@mail.ru
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feedback-rule">
+
+                        <span>03</span>
+
+                        <div>
+                            <h3>Опишите обращение</h3>
+
+                            <p>
+                                Сообщение должно содержать не менее
+                                10 слов.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feedback-rule">
+
+                        <span>04</span>
+
+                        <div>
+                            <h3>Выберите тему</h3>
+
+                            <p>
+                                Можно отправить предложение, жалобу,
+                                вопрос, благодарность или другое обращение.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+
+                <!-- Форма -->
+
+                <div class="feedback-form-wrapper">
+
+                    <form
+                            id="feedbackForm"
+                            class="feedback-form"
+                            action="#"
+                            method="post"
+                            novalidate>
+
+
+                        <!-- Имя -->
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Имя
+                                <span class="required">*</span>
+                            </label>
+
+                            <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Введите ваше имя"
+                                    autocomplete="name"
+                                    minlength="2"
+                                    maxlength="50"
+                                    required>
+
+                            <small class="form-hint">
+                                От 2 до 50 символов.
+                            </small>
+
+                        </div>
+
+
+                        <!-- Email -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Электронная почта
+                                <span class="required">*</span>
+                            </label>
+
+                            <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="example@mail.ru"
+                                    autocomplete="email"
+                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                    required>
+
+                            <small class="form-hint">
+                                Например: example@mail.ru
+                            </small>
+
+                        </div>
+
+
+                        <!-- Тип обращения -->
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Тип обращения
+                                <span class="required">*</span>
+                            </label>
+
+                            <select
+                                    id="subject"
+                                    name="subject"
+                                    required>
+
+                                <option value="">
+                                    Выберите тип обращения
+                                </option>
+
+                                <option value="suggestion">
+                                    💡 Предложение
+                                </option>
+
+                                <option value="complaint">
+                                    ⚠️ Жалоба
+                                </option>
+
+                                <option value="question">
+                                    ❓ Вопрос
+                                </option>
+
+                                <option value="thanks">
+                                    ❤️ Благодарность
+                                </option>
+
+                                <option value="error">
+                                    🐞 Сообщение об ошибке
+                                </option>
+
+                                <option value="other">
+                                    📌 Другое
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Сообщение -->
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Сообщение
+                                <span class="required">*</span>
+                            </label>
+
+                            <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="8"
+                                    placeholder="Напишите ваше сообщение..."
+                                    minlength="50"
+                                    maxlength="3000"
+                                    required></textarea>
+
+
+                            <div class="message-statistics">
+
+                                <span id="wordCounter">
+                                    Слов: 0 / минимум 10
+                                </span>
+
+                                <span id="charCounter">
+                                    Символов: 0 / 3000
+                                </span>
+
+                            </div>
+
+
+                            <small class="form-hint">
+                                Сообщение должно содержать минимум
+                                10 слов и не менее 50 символов.
+                            </small>
+
+                        </div>
+
+
+                        <!-- Согласие -->
+
+                        <div class="form-checkbox">
+
+                            <input
+                                    type="checkbox"
+                                    id="agreement"
+                                    name="agreement"
+                                    required>
+
+                            <label for="agreement">
+                                Я подтверждаю, что указал(а) достоверные
+                                данные и согласен(на) на обработку
+                                предоставленной информации.
+                                <span class="required">*</span>
+                            </label>
+
+                        </div>
+
+
+                        <!-- Кнопка -->
+
+                        <button
+                                type="submit"
+                                class="button form-submit">
+
+                            Отправить сообщение
+
+                        </button>
+
+
+                        <!-- Сообщение об отправке -->
+
+                        <div
+                                id="formResult"
+                                class="form-result"
+                                aria-live="polite">
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Правила -->
+
+    <section class="events-summary">
+
+        <div class="container">
+
+            <h2>
+                Правила заполнения формы
+            </h2>
+
+            <div class="rules-list">
+
+                <article>
+
+                    <h3>✓ Обязательные поля</h3>
+
+                    <p>
+                        Все поля, отмеченные символом «*», необходимо
+                        заполнить перед отправкой формы.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>✓ Корректный email</h3>
+
+                    <p>
+                        Адрес электронной почты должен иметь полный
+                        формат, например: name@example.com.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>✓ Минимум 10 слов</h3>
+
+                    <p>
+                        Для более содержательного обращения сообщение
+                        должно содержать не менее десяти слов.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>✓ Проверка данных</h3>
+
+                    <p>
+                        Перед отправкой убедитесь, что информация
+                        указана правильно.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>
+                    Дружковка
+                </h2>
+
+                <p>
+                    Информационный сайт о городе
+                </p>
+
+            </div>
+
+
+            <nav aria-label="Навигация в подвале">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="history.html">
+                            История
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="infrastructure.html">
+                            Инфраструктура
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="culture.html">
+                            Культура
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="feedback.html">
+                            Обратная связь
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 Информационный сайт о Дружковке
+        </p>
+
+    </div>
+
+</footer>
+
+
+<a
+        href="#top"
+        class="back-to-top"
+        aria-label="Вернуться наверх">
+</a>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
